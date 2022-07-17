@@ -1,38 +1,673 @@
-.App {
+:root{
+  --soho_dgrey: rgb(78,79,84,1);
+  --soho_white: rgb(255,255,255,1);
+  --soho_lgrey: rgb(200, 207, 214,1);
+  --soho_black: rgb(31,29,31,1);
+  --soho_maroon: rgb(98,68,69,1);
+  --soho_black_opaque: rgb(31,29,31,0.5);
+  --soho_white_opaque:rgb(255,255,255,0.6);
+  --soho_dgrey_opaque:rgb(78,79,84,0.6);
+  --soho_lgrey_opaque:rgb(200,207,214,0.3);
+  --soho_maroon_opaque: rgb(98,68,69,0.5);
+  --coffeekey-teal: hsla(192, 25%, 44%, 1);
+  --coffeekey-brown: hsla(29, 43%, 12%, 1);
+  --coffeekey-grey: hsla(44, 8%, 35%, 1);
+  --coffeekey-black: rgb(25, 27, 24);
+  --coffeekey-teal_opaque: hsla(192, 25%, 44%, 0.5);
+  --coffeekey-brown_opaque: hsla(29, 43%, 12%, 0.5);
+  --coffeekey-grey_opaque: hsla(44, 8%, 35%, 0.5);
+  --coffeekey-black_opaque: hsla(100, 6%, 10%, 0.5);
+  --dirt: rgb(221, 162, 95, 0.5);
+  --h4_font: 'Manrope', sans-serif;
+  --h2_font: 'Bad Script', cursive;
+  --h3_font: 'Lexend Deca', sans-serif;
+  --h1_font: 'Libre Baskerville', serif;
+  --h5_font: 'Caveat', cursive;
+}
+
+* {
+  margin: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* DELTE WHEN ALL PAGES ARE COMPLETE*/
+.intro_paragraph p{
+  color: white;
   text-align: center;
+  font-family: var(--h5_font);
+  padding-top: 10%;
+}
+/* DELTE WHEN ALL PAGES ARE COMPLETE*/
+
+
+footer {
+  color: white;
+  text-align: center;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--coffeekey-teal);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.index_introheader{
+  background-image: url(https://kdjiang390.github.io/Assets/me.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  right: 0;
+  top: 0;
+  aspect-ratio: 16/9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav {
+  position: sticky;
+  position:-webkit-sticky;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  background-color: var(--soho_black_opaque);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#nav ul li {
+
+  font-weight: bold;
+  font-size: 100%;
+  display: inline-block;
+  padding: 3% 0px 3% 0px;
+  transition: background .5s;
+  width: 200px;
+  height: 10%;
+}
+  
+#nav ul li:hover {
+  background-color: var(--coffeekey-teal);
+  cursor: pointer; 
+  transition: background .5s;
+}
+
+#nav ul li a {
+  font-family: var(--h3_font);
+  color: var(--soho_white);
+  text-decoration: none;
+}
+
+#intro_liners{
+  word-break:break-word;
+  text-align: left;
+  white-space: normal;
+  background-color: var(--soho_black_opaque);
+  width: 50vw;
+  padding: 0px 0px 0px 0px;
+  margin-top: 10%;
+}
+
+#intro_liners h1 {
+  width: fit-content;
+  color: var(--soho_white);
+  font-size:7vw;
+  bottom: 100px;
+  font-family: var(--h5_font);
+  font-weight: bold;
+  position: flex;
+  text-align: left;
+  padding: 0px 15px 0px 15px;
+}
+
+#intro_liners h2 {
+  width: fit-content;
+  color: var(--soho_white);
+  font-size:2vw;
+  font-family: var(--h3_font);
+  font-weight: bold;
+  text-align: left;
+  padding: 10% 20px 20px 20px;
+
+}
+
+#intro_liners h3 {
+  width: fit-content;
+  color: var(--soho_white);
+  font-size:2vw;
+  font-family: var(--h3_font);
+  font-weight: bold;
+  text-align: left;
+  padding: 20px 20px 20px 20px;
+}
+
+#intro_liners ul{
+  padding: 30px 0px 0px 0px;
+}
+
+#intro_liners li{
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+#intro_liners li a{
+  font-size: 14px;
+  font-family: var(--h3_font);
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: white;
+  box-sizing: border-box;
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#intro_liners li a:hover{
+  background-color: var(--coffeekey-teal);
+  cursor: pointer; 
+  transition: background .5s; 
+}
+
+#socialmedia ul{
+  padding: 3% 0px 5% 17px;
+}
+
+#socialmedia ul li{
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 0px 0px 0px;
+  width: 70px;
+  height: 10%;
+}
+
+#socialmedia ul li a img:hover{
+  background-color: var(--coffeekey-teal);
+  cursor: pointer; 
+  transition: background .5s;
+  border-radius: 10px;
+}
+
+
+
+/* BELOW: about me page*/
+
+.aboutme_body{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aboutme_introheader{
+  /* remember to add https:// to link */
+  background-image: url(https://kdjiang390.github.io/Assets/road.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  right: 0;
+  top: 0;
+}
+
+
+.intro_paragraph{
+  padding: 10% 0px 14% 0px;
+}
+
+.intro_content{
+  font-family: var(--h5_font);
+  font-weight: bold;
+  color: white;
+  word-break:break-word;
+  white-space: normal;
+  text-decoration: none;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.intro_content h1{
+  color: var(--soho_white_opaque);
+  text-align: center;
+  font-size: 7vw;
+}
+
+.intro_content p{
+  color: var(--soho_white);
+  text-align: center;
+  font-size: 3vw;
+  font-family: var(--h3_font);
+}
+
+/*Journey section*/
+.journey_container p{
+  word-break:break-word;
+  white-space: normal;
+}
+.journey_background{
+  background-image: url(https://kdjiang390.github.io/Assets/wave.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.journey_container{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--soho_black_opaque);
+}
+
+.journey_content h1{
+  color: white;
+  font-family: var(--h5_font);
+  position:static;
+  text-align: center;
+  font-size: 400%;
+  padding: 3%;
+}
+
+.journey_content #title, .journey_content #location, .journey_content #company{
+  font-family: var(--h3_font);
+  color: darksalmon;
+  font-size: 130%;
+  line-height: 170%;
+}
+
+.journey_content #title{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.journey_content #location{
+  color:wheat;
+  border-bottom: dotted;
+  border-color: var(--soho_white);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.journey_content p {
+  font-family: var(--h4_font);
+  color: var(--soho_white);
+  font-size: 17px;
+  line-height: 150%;
+  padding-top: 3%;
+}
+
+.journey_grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: min-content min-content min-content min-content min-content;
+  column-gap: 2%;
+  row-gap: 5vw;
+  justify-content:center;
+  font-size: 100%;
+  padding-bottom: 5%;
+}
+
+#tesla_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 1;
+  position: static;
+  object-fit: contain;
+  height: 20vw;
+  margin-left: 35%;
+  margin-top: 5%;
+  box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
+  border-radius: 10px;
+}
+
+#tesla_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 1;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+#umd_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 2;
+  position: static;
+  object-fit: contain;
+  height: 15vw;
+  margin-top: 5%;
+  margin-left: 20%;
+  box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
+  border-radius: 10px;
+}
+
+#umd_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 2;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+.journey_content a{
+  text-decoration: none;
+  color: wheat;
+}
+
+#liberty_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 3;
+  position: static;
+  object-fit: contain;
+  height: 18vw;
+  margin-top: 5%;
+  margin-left: 30%;
+  box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
+  border-radius: 10px;
+}
+
+#liberty_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 3;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+#cab_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 4;
+  position: static;
+  object-fit: contain;
+  height: 11vw;
+  margin-top: 5%;
+  margin-left: 20%;
+  box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
+  border-radius: 10px;
+}
+
+#cab_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 4;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+#psu_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 5;
+  position: static;
+  object-fit: contain;
+  height: 13vw;
+  margin-top: 5%;
+  margin-left: 28%;
+  box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
+  border-radius: 10px;
+}
+
+#psu_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 5;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+/*MY COMMUNITY SECTION*/
+
+.community_background{
+  background-image: url(https://kdjiang390.github.io/Assets/keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.community_container {
+  background-color: var(--soho_maroon_opaque);
+  background-size: auto 100%;
+  resize: vertical;
+  word-break:break-word;
+  white-space: normal;
+  text-decoration: none;
+}
+  #community_text{
+    color: white;
+    font-family: var(--h5_font);
+    text-align: center;
+    position: static;
   }
-  to {
-    transform: rotate(360deg);
+
+  #community_text h1{
+    padding-top: 3%;
+    font-size: 400%;
   }
+  #community_text p{
+    font-family: var(--h4_font);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin: 0% 5% 0 5%;
+  }
+
+.community_grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  column-gap: 5%;
+  row-gap: 5%;
+  justify-items: center;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 15%;
+  text-align: center;
+}
+  .community_grid h2,.community_grid a {
+    font-size: 1.5vw;
+    padding-bottom: 5%;
+    color:var(--soho_white);
+    text-decoration: none;
+    font-family: var(--h3_font);
+  }
+  .community_grid p{
+    font-family: var(--h4_font);
+    font-size: 1vw;
+    font-weight: 200;
+  }
+
+.fza_wrapper, .stackoverflow_wrapper, .medium_wrapper, .dribbble_wrapper, .behance_wrapper, .fishbowl_wrapper, .lifeat_wrapper, .athleanx_wrapper, .atlassian_wrapper {
+  position: static;
+  border: 1px groove var(--soho_dgrey_opaque);
+  border-radius: 10px;
+  cursor: pointer; 
+  transition: background .5s;
+  padding: 5%;
+  background-color: var(--dirt);
+  box-shadow: 5px 5px 5px var(--coffeekey-brown_opaque);
+}
+.fza_wrapper:hover, .stackoverflow_wrapper:hover, .medium_wrapper:hover, .dribbble_wrapper:hover, .behance_wrapper:hover, .fishbowl_wrapper:hover, .lifeat_wrapper:hover, .athleanx_wrapper:hover, .atlassian_wrapper:hover {
+  background-color: var(--coffeekey-teal_opaque);
+  border: 1px solid var(--soho_dgrey_opaque);
+}
+
+.fza_wrapper{
+  grid-area: community_grid;
+  grid-column: 1;
+  grid-row: 1;
+  position: static;
+}
+
+.stackoverflow_wrapper{
+  grid-area: community_grid;
+  grid-column: 2;
+  grid-row: 1;
+  position: static;
+}
+
+.medium_wrapper{
+  grid-area: community_grid;
+  grid-column: 3;
+  grid-row: 1;
+  position: static;
+}
+
+.dribbble_wrapper{
+  grid-area: community_grid;
+  grid-column: 1;
+  grid-row: 2;
+  position: static;
+}
+
+.behance_wrapper{
+  grid-area: community_grid;
+  grid-column: 2;
+  grid-row: 2;
+  position: static;
+}
+
+.fishbowl_wrapper{
+  grid-area: community_grid;
+  grid-column: 3;
+  grid-row: 2;
+  position: static;
+}
+
+.lifeat_wrapper{
+  grid-area: community_grid;
+  grid-column: 1;
+  grid-row: 3;
+  position: static;
+}
+
+.athleanx_wrapper{
+  grid-area: community_grid;
+  grid-column: 2;
+  grid-row: 3;
+  position: static;
+}
+
+.atlassian_wrapper{
+  grid-area: community_grid;
+  grid-column: 3;
+  grid-row: 3;
+  position: static;
+}
+/* PORTFOLIO PAGE*/
+.portfolio_head_container{
+  background-image: url(https://kdjiang390.github.io/Assets/portfolio_header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:static;
+  right: 0;
+  top: 0;
+  aspect-ratio: 16/9;
+  transform: scale(1, 1);
+}
+
+.portfolio_head_content {
+  background-color: var(--soho_lgrey_opaque);
+  border-radius: 15px;
+  font-family: var(--h5_font);
+  font-weight: bold;
+  font-size: 250%;
+  color: white;
+  word-break:break-word;
+  white-space: normal;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  margin-top: 5%;
+  padding: 5% 3% 5% 3%;
+  width: 50%;
+}
+
+.portfolio_head_content_paragraph p{
+  font-family: var(--h4_font);
+  font-size: 20px;
+}
+
+.portfolio_body_grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  word-break:break-word;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.portfolio_body_grid a{
+  text-decoration: none;
+  color: black;
+}
+
+.portfolio_body_grid h2 {
+  padding-top: 10%;
+  font-family: var(--h3_font);
+  text-decoration: none;
+}
+
+.portfolio_body_grid p {
+  font-family: var(--h4_font);
+  font-size: 3vw;
+}
+
+#PBG1_image, #PBG2_image, #PBG3_image, #PBG4_image {
+  width: 80%;
+  height: 60%;
+  justify-items: center;
+  object-fit:cover;
+  overflow: hidden;
+  align-items:center;
+}
+
+.PBG2{
+  grid-area: portfolio_body_grid;
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  background-color:#e7e2df;
+}
+
+.PBG1{
+  grid-area: portfolio_body_grid;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  background-color:hsla(193, 18%, 90%, 0.873);
+}
+
+.PBG3{
+  grid-area: portfolio_body_grid;
+  grid-column: 1;
+  grid-row: 2;
+  background-color:hsla(65, 21%, 88%, 0.873);
+
+  width: 100%;
+}
+
+.PBG4{
+  grid-area: portfolio_body_grid;
+  grid-column: 2;
+  grid-row: 2;
+  background-color:hsla(120, 32%, 88%, 0.873);
+  width: 100%;
+}
+
+/* CONTACTS PAGE*/
+.contacts_introheader{
+  background-image: url(https://kdjiang390.github.io/Assets/contacts_introheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:static;
+  right: 0;
+  top: 0;
+  aspect-ratio: 16/9;
+  transform: scale(1, 1);
 }
