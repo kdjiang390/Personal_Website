@@ -5,13 +5,13 @@ import Portfolio from './pages/portfolio';
 import Contacts from './pages/contacts';
 import './App.css';
 
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
-// BrowserRouter works everywhere EXCEPT github page, hence switched over to HashRouter.
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// BrowserRouter works everywhere EXCEPT github page, HashRouter is an alternative.
 // BrowserRouter use basename and Hashrouter use base.
 
 function App() {
   return (
-    <Router base='kdjiang390.github.io/personal_website'>
+    <Router>
       <Head />
       <Routes>
         <Route path="/" element={<Home/>} />
