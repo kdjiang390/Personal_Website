@@ -9,14 +9,14 @@ import INSTAGRAM from '../assets/icons8-instagram-50.svg';
 class Home extends react.Component {
   render() {
     return (
-        <body>   
-            <div class = "index_introheader">
+        <div>   
+            <div className = "index_introheader">
                 <div id ="nav">
                     <ul>
-                        <li><NavLink to="/" exact activeClassName = "active">Home</NavLink></li>
-                        <li><NavLink to="/aboutme" activeClassName = "active">About Me</NavLink></li>
-                        <li><NavLink to="/portfolio" activeClassName = "active">Portfolio</NavLink></li>
-                        <li><NavLink to="/contacts" activeClassName = "active">Contacts</NavLink></li>
+                        <li><NavLink to="/" exact="true">Home</NavLink></li>
+                        <li><NavLink to="/aboutme">About Me</NavLink></li>
+                        <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                        <li><NavLink to="/contacts">Contacts</NavLink></li>
                     </ul>
                 </div>
                 <div id="intro_liners">
@@ -38,7 +38,7 @@ class Home extends react.Component {
                 </div>
             </div>
             <footer>All work © Kenneth Jiang 2022 • all rights reserved</footer>
-        </body>
+        </div>
     );
   }
 }

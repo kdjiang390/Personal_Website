@@ -9,19 +9,19 @@ import CABS from '../assets/cabs.png';
 class Aboutme extends react.Component {
   render() {
     return (
-        <body>
-            <div class="aboutme_body"> 
-                <div class = "aboutme_introheader">
+        <div>
+            <div className="aboutme_body"> 
+                <div className = "aboutme_introheader">
                     <div id ="nav">
                         <ul>
-                            <li><NavLink to="/" exact activeClassName = "active">Home</NavLink></li>
-                            <li><NavLink to="/aboutme" activeClassName = "active">About Me</NavLink></li>
-                            <li><NavLink to="/portfolio" activeClassName = "active">Portfolio</NavLink></li>
-                            <li><NavLink to="/contacts" activeClassName = "active">Contacts</NavLink></li>
+                            <li><NavLink to="/" exact="true">Home</NavLink></li>
+                            <li><NavLink to="/aboutme">About Me</NavLink></li>
+                            <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                            <li><NavLink to="/contacts">Contacts</NavLink></li>
                         </ul>
                     </div>
-                    <div class="intro_paragraph">
-                        <div class="intro_content">
+                    <div className="intro_paragraph">
+                        <div className="intro_content">
                             <h1>Learn from <span style={{color: 'white'}}>the past</span></h1>
                             <h1>Live in <span style={{color: 'white'}}>the present</span></h1>
                             <h1> Plan for <span style={{color: 'white'}}>the future</span></h1>
@@ -30,11 +30,11 @@ class Aboutme extends react.Component {
                         </div>
                     </div>
                 </div>
-                <div class="journey_background">
-                    <div class="journey_container">
-                        <div class="journey_content">
+                <div className="journey_background">
+                    <div className="journey_container">
+                        <div className="journey_content">
                             <h1>- My Journey -</h1>
-                            <div class="journey_grid">
+                            <div className="journey_grid">
                                 <img id= "tesla_image" src={TESLA} alt="" />
                                 <div id="tesla_content">
                                     <h2 id="company">Tesla</h2>
@@ -56,13 +56,13 @@ class Aboutme extends react.Component {
                                         and enrolled in the two-year, Master of Business Administration (MBA) program.  
                                         <br />
                                         <br />
-                                        Here at Smith, I'm surrounded by incredibly talented classmates and helpful faculties who are always willing
+                                        Here at Smith, I'm surrounded by incredibly talented classNamemates and helpful faculties who are always willing
                                         to support my growth, both personally and professionally. I am thankful for having them by my side on this journey.
                                         <br />
                                         <br />
                                         One of the highlights of my first year at Smith was participating in the
                                         <u><a id = "ICF" href="https://www.rhsmith.umd.edu/centers/social-value-creation/programs/impact-consulting-fellowship" target="_blank" rel='noreferrer' > Impact Consulting Fellowship</a></u>, 
-                                        a Smith-exclusive, 3-month program that encourages student to put classroom knowledge into 
+                                        a Smith-exclusive, 3-month program that encourages student to put classNameroom knowledge into 
                                         practice and to build real-world applications for social value creations. I was selected to lead a team of 6 students to take on a consulting project in partnerships 
                                         with a UMD alumni-found technology startup company named <u><a id= "hopehydration" href= "https://hopehydrate.com/" target="_blank" rel='noreferrer' > Hope Hydration</a></u>.
                                         <br />
@@ -141,14 +141,14 @@ class Aboutme extends react.Component {
                         </div>
                     </div>
                 </div>
-                <div class="community_background">
-                    <div class = "community_container">
+                <div className="community_background">
+                    <div className = "community_container">
                         <div id="community_text">
                             <h1>- My Communities -</h1>
                             <p>The people in my life are everything to me. Here are a few communities in which I am most active:</p>
                         </div>
-                        <div class="community_grid">
-                            <div class="fza_wrapper">
+                        <div className="community_grid">
+                            <div className="fza_wrapper">
                                 <div id="fza_text"><a href="https://www.fuzhouamerica.com/" target="_blank" rel='noreferrer' >
                                     <h2>Fuzhou, America (FZA) 👫🏻🧑🏻‍🤝‍🧑🏻</h2>
                                     <p>A community connecting Fuzhou Americans to socialize, network, and celebrate heritage.</p>
@@ -157,7 +157,7 @@ class Aboutme extends react.Component {
                                     <p>#AsianAmerican</p>
                                 </a></div>
                             </div>
-                            <div class="stackoverflow_wrapper">
+                            <div className="stackoverflow_wrapper">
                                 <div id="stackoverflow_text"><a href="https://stackoverflow.com/" target="_blank" rel='noreferrer' >
                                     <h2>Stack Overflow 👨‍💻</h2>
                                     <p>A community-based space to find and contribute answers to technical challenges in the software development domain.</p>
@@ -166,7 +166,7 @@ class Aboutme extends react.Component {
                                     <p>#Productivity</p>
                                 </a></div>
                             </div>
-                            <div class="medium_wrapper">
+                            <div className="medium_wrapper">
                                 <div id="medium_text"><a href="https://medium.com/" target="_blank" rel='noreferrer' >
                                     <h2>Medium.com 📰</h2>
                                     <p>A tech. space-focused open writing platform where bloggers can write, share, publish their stories to the public audience.</p>
@@ -175,7 +175,7 @@ class Aboutme extends react.Component {
                                     <p>#Learning</p>
                                 </a></div>
                             </div>
-                            <div class="dribbble_wrapper">
+                            <div className="dribbble_wrapper">
                                 <div id="dribble_text"><a href="https://dribbble.com/" target="_blank" rel='noreferrer' >
                                     <h2>Dribbble 🎨</h2>
                                     <p>One of the world’s leading spaces for freelance content creators to share, grow, and connect.</p>
@@ -184,7 +184,7 @@ class Aboutme extends react.Component {
                                     <p>#Hobby</p>
                                 </a></div>
                             </div>
-                            <div class="behance_wrapper">
+                            <div className="behance_wrapper">
                                 <div id="behance_text"><a href="https://www.behance.net/" target="_blank" rel='noreferrer' >
                                     <h2>Behance 🎭</h2>
                                     <p> World's largest creative network for showcasing and discovering creative work.</p>
@@ -193,7 +193,7 @@ class Aboutme extends react.Component {
                                     <p>#Design</p>
                                 </a></div>
                             </div>
-                            <div class="fishbowl_wrapper">
+                            <div className="fishbowl_wrapper">
                                 <div id="fishbowl_text"><a href="https://www.fishbowlapp.com/" target="_blank" rel='noreferrer' >
                                     <h2>FishBowl 🐟</h2>
                                     <p>Fishbowl is where professionals go to connect and talk in a new era of remote work.</p>
@@ -202,7 +202,7 @@ class Aboutme extends react.Component {
                                     <p>#Networking</p>
                                 </a></div>
                             </div>
-                            <div class="lifeat_wrapper">
+                            <div className="lifeat_wrapper">
                                 <div id="lifeat_text"><a href="https://www.lifeat.io/" target="_blank" rel='noreferrer' >
                                     <h2>Lifeat.io ⛱️</h2>
                                     <p>An open-source web app providing virtual study and work spaces from around the world.</p>
@@ -211,7 +211,7 @@ class Aboutme extends react.Component {
                                     <p>#Productivity</p>
                                 </a></div>
                             </div>
-                            <div class="athleanx_wrapper">
+                            <div className="athleanx_wrapper">
                                 <div id="athleanx_text"><a href="https://www.reddit.com/r/Athleanx/" target="_blank" rel='noreferrer' >
                                     <h2>Athlean-X 💪</h2>
                                     <p>A fitness program dedicated to providing science-based bodybuilding lessons & tips.</p>
@@ -220,7 +220,7 @@ class Aboutme extends react.Component {
                                     <p>#Fitness</p>
                                 </a></div>
                             </div>
-                            <div class="atlassian_wrapper">
+                            <div className="atlassian_wrapper">
                                 <div id="atlassian_text"><a href="https://community.atlassian.com/" target="_blank" rel='noreferrer' >
                                     <h2>Atlassian 👨‍💼</h2>
                                     <p>A community dedicated to connecting and provide learning opportunities to aspiring developers and project managers.</p>
@@ -234,7 +234,7 @@ class Aboutme extends react.Component {
                 </div>    
             </div>
             <footer>all work © Kenneth Jiang 2022 • all rights reserved</footer>  
-        </body>
+        </div>
     );
   }
 }
