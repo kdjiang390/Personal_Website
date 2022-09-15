@@ -15,12 +15,23 @@ class Contacts extends react.Component {
                             <li><NavLink to="/contacts">Contacts</NavLink></li>
                         </ul>
                     </div>
-                    <section className="intro_paragraph">
-                        <p style={{fontSize: '3em'}}>Content work in progress! Check back later :)</p>
+                    <h1>Get in touch</h1>
+                    <section class="contact_form">
+                        <form action="https://send.pageclip.co/TLqlWMpLSQsMhEKi399N8vcILRHuTzzL/ContactForm" class="pageclip-form" method="post">
+                            <p>Any questions, comments, or ideas for improvements? Just write me a message!</p>
+                            <input type="text" name="subject" placeholder="Enter Name" required/>
+                            <input type="text" name="email" placeholder="Enter Email" required/>
+                            <textarea type="text" name="message" placeholder="Enter Message" required></textarea>
+
+                            <button type="submit" class="pageclip-form__submit">
+                                <span>Submit</span>
+                            </button>
+                        </form>
                     </section>
-                </div>
-            </div>
-            <footer>all work © Kenneth Jiang 2022 • all rights reserved</footer>  
+                </div>    
+            <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+            </div> 
+            <footer>all work © Kenneth Jiang 2022 • all rights reserved</footer>
         </div>
     );
   }

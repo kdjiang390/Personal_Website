@@ -2,6 +2,7 @@ import react from 'react';
 import {NavLink} from 'react-router-dom';
 import app1_mockup from '../assets/app1_mockup.png';
 import app2_mockup from '../assets/app2_mockup.png';
+import app3_mockup from '../assets/blog.jpg';
 import WIP from '../assets/WIP.jpg';
 
 
@@ -38,19 +39,19 @@ class Portfolio extends react.Component {
                             <br />
                             <img id = "PBG1_image" src={app1_mockup} alt="Project 1" />
                         </a></div>
-                        <div className = "PBG2">
+                        <div className = "PBG2"><a href="https://kdjiang390.github.io/contacts.html" target="_blank" rel="noreferrer">
                             <h2>Project 2</h2>
                             <br />
-                            <p>Submission Form (W.I.P.)</p>
+                            <p>Submission Form</p>
                             <br />
                             <img id = "PBG2_image" src={app2_mockup} alt="Project 2" />
-                        </div>
+                        </a></div>
                         <div className = "PBG3">
                             <h2>Project 3</h2>
                             <br />
-                            <p>To Be Defined...</p>
+                            <p>Content-Sharing Platform (WIP)</p>
                             <br />
-                            <img id = "PBG3_image" src={WIP} alt="Project 3" />
+                            <img id = "PBG3_image" src={app3_mockup} alt="Project 3" />
                         </div>
                         <div className = "PBG4">
                             <h2>Project 4</h2>
